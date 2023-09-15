@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Cases">
+
+    <test name="myTest">
+        <classes>
+
+            <class name="RunOperators.TestCase1"> </class>
+            <class name="RunOperators.TestCase2"> </class>
+            <class name="RunOperators.TestCase3"> </class>
+            <class name="RunOperators.TestCase4_1"> </class>
+            <class name="RunOperators.TestCase4_2"> </class>
+            <class name="RunOperators.TestCase6"> </class>
+            <class name="RunOperators.TestCase6"> </class>
+            <class name="RunOperators.TestCase7"> </class>
+
+        </classes>
+    </test>
+</suite>

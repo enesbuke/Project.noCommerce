@@ -13,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BaseDriverClass {
+
     public static WebDriver driver;
     public static WebDriverWait wait;
 
