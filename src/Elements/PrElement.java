@@ -108,14 +108,11 @@ public class PrElement extends BaseDriverMethod {
     @FindBy(xpath = "(//h2[@class='product-title']/a)[1]")
     public WebElement buildOwnComp;
 
-    @FindBy(xpath = "//select[@id='product_attribute_2']")
-    public WebElement ramSelect;
-
     @FindBy(xpath = "//select[@id='product_attribute_2']/option[@data-attr-value]")
-    public WebElement ramSelectContents;
+    public List<WebElement> ramSelectContents;
 
     @FindBy(xpath = "//input[@name='product_attribute_3']")
-    public WebElement hddButtons;
+    public List<WebElement> hddButtonS;
 
     @FindBy(xpath = "//button[@id='add-to-cart-button-1']")
     public WebElement BYOC_addToCardButton;
