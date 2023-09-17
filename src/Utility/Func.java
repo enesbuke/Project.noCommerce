@@ -9,5 +9,8 @@ public class Func {
             throw new RuntimeException(e);
         }
     }
+    public static int createRandomNumb(int boundary){
+        return (int)(Math.random()*boundary);
+    }
 
 }
