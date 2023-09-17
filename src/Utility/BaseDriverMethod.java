@@ -6,7 +6,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.awt.*;
 import java.time.Duration;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -29,8 +31,16 @@ public class BaseDriverMethod {
     }
 
     @AfterMethod
-    public void bitisIslemleri(){
+    public void bitisIslemleri() {
         Func.Wait(5);
         driver.quit();
+    }
+
+
+    //Rasgele bir sayi uretmek icin
+    public static int generalRandom(int min, int max) {
+        Random rnd = new Random();
+        return rnd.nextInt((max - min) + 1) + min;
+
     }
 }
