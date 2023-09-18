@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class PrElement extends BaseDriverMethod {
+public class PrElement extends Parents {
 
     public PrElement() {
         PageFactory.initElements(BaseDriverMethod.driver, this);
@@ -34,7 +34,66 @@ public class PrElement extends BaseDriverMethod {
     @FindBy(xpath = "//div[@class='message-error validation-summary-errors']") //login sayfası hatalı giriş mesajı
     public WebElement loginErrorMsg;
     //Case3-*
+    //Case4.1 - 4.2-
 
+    @FindBy(xpath = "//div[@class='header-menu']")  // başlangıç menü
+    public  List<WebElement >listheader;
+    @FindBy(xpath = "//ul[@class='sublist first-level']") // alt menü
+    public List<WebElement>  subtabs;
+    @FindBy(xpath = "//div[@class='header-menu']")
+    public WebElement headerMenu;
+    @FindBy(xpath = "//*[text()='Computers ']")     // Copmuter sekmesi
+    public WebElement computers;                   //
+    @FindBy(xpath = "//a[text()='Desktops ']")      // Computer sekmesinin altındaki desktops
+    public WebElement desktop;                     //
+    @FindBy(xpath = " //a[text()='Notebooks ']")    // Computer sekmesinin altındaki Notebooks
+    public WebElement notebooks;                   //
+    @FindBy(xpath = " //a[text()='Software ']")     // Computer sekmesinin altındaki Software
+    public WebElement software;                    //
+
+    @FindBy(linkText = "Electronics")                  // Electronics sekmesi
+    public WebElement electronics;                    //
+    @FindBy(xpath = " //a[text()='Camera & photo ']")  // Electronics sekmesinin altındaki Camera & photo
+    public WebElement cameraAndPhoto;                 //
+    @FindBy(xpath = " //a[text()='Cell phones ']")    // Electronics sekmesinin altındaki Cell phones
+    public WebElement cellPhone;                     //
+    @FindBy(xpath = " //a[text()='Others ']")       // Electronics sekmesinin altındaki Others
+    public WebElement others;
+
+
+    @FindBy(xpath = "//*[text()='Apparel ']")        // Apparel sekmesi
+    public WebElement apparel;                      //
+    @FindBy(xpath = " //a[text()='Shoes ']")         //Apparel sekmesinin altındaki Shoes
+    public WebElement shoes;                        //
+    @FindBy(xpath = " //a[text()='Clothing ']")      //Apparel sekmesinin altındaki Clothing
+    public WebElement clothing;                     //
+    @FindBy(xpath = " //a[text()='Accessories ']")  //Apparel sekmesinin altındaki Accessories
+    public WebElement accessories;                 //
+
+
+    @FindBy(xpath = "//*[text()='Digital downloads ']")  //Digital downloads sekmesi
+    public WebElement digitalDownloads;                 //
+    @FindBy(xpath = "//*[text()='Books ']")              //Books sekmesi
+    public WebElement books;                            //
+    @FindBy(xpath = "//*[text()='Jewelry ']")            //Jewelry sekmesi
+    public WebElement jewelry;                          //
+    @FindBy(xpath = "//*[text()='Gift Cards ']")         //Gift Cards sekmesi
+    public WebElement giftCards;                        //
+
+    @FindBy(id = "small-searchterms")         //Gift Cards sekmesi
+    public WebElement search;                //
+
+
+    @FindBy(xpath = "//div[@class='details']")   // Ürün detayları
+    public List<WebElement> details;            //
+
+    @FindBy(xpath ="//h2[@class='product-title']/a")      //Ürün ismileri
+    public List<WebElement> productTitle;              //
+
+    @FindBy(xpath = "//div[@class='product-name']")
+    public WebElement productName;
+
+    //Case4.1- 4.2-*
     //Case5-
     @FindBy(css = ".product-item")  //S
     public List<WebElement> productItems;
@@ -133,7 +192,6 @@ public class PrElement extends BaseDriverMethod {
     @FindBy(xpath = "//a[text()='Adobe Photoshop CS4']")
     public WebElement product;
 
-    @FindBy(xpath = "//div[@class='product-name']")
-    public WebElement productName;
+
 
 }

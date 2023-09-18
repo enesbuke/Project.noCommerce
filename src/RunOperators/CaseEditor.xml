@@ -3,6 +3,7 @@
 <suite name="All Test Cases">
 
         <test name="myTest">
+            <parameter name="elements" value="Notebook"> </parameter >
             <classes>
 
 
