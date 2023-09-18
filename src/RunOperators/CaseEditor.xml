@@ -2,18 +2,34 @@
 
 <suite name="All Test Cases">
 
-    <test name="myTest">
-        <classes>
+        <test name="myTest">
+            <classes>
 
-            <class name="RunOperators.TestCase1"> </class>
-            <class name="RunOperators.TestCase2"> </class>
-            <class name="RunOperators.TestCase3"> </class>
-            <class name="RunOperators.TestCase4_1"> </class>
-            <class name="RunOperators.TestCase4_2"> </class>
-            <class name="RunOperators.TestCase5"> </class>
-            <class name="RunOperators.TestCase6"> </class>
-            <class name="RunOperators.TestCase7"> </class>
+
+                <class name="RunOperators.TestCase1"> </class>
+                <class name="RunOperators.TestCase2"> </class>
+                <class name="RunOperators.TestCase3"> </class>
+                <class name="RunOperators.TestCase4_1"> </class>
+                <class name="RunOperators.TestCase4_2"> </class>
+                <class name="RunOperators.TestCase5"> </class>
+                <class name="RunOperators.TestCase6"> </class>
+            </classes>
+        </test>
+
+
+        <test name="myTest1">
+
+                <parameter name="msg" value="Adobe Photoshop CS4">  </parameter>
+            <classes>
+
+                    <class name="RunOperators.TestCase7">
+                        <methods>
+                            <include name="US_07_Search">  </include>
+                        </methods>
+                    </class>
 
         </classes>
+
+
     </test>
 </suite>
