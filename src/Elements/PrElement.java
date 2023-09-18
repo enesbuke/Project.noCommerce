@@ -122,4 +122,18 @@ public class PrElement extends BaseDriverMethod {
 
     //Case6-*
 
+    //Case7-
+
+    @FindBy(name = "q")
+    public WebElement searchStore;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement searchButton;
+
+    @FindBy(xpath = "//a[text()='Adobe Photoshop CS4']")
+    public WebElement product;
+
+    @FindBy(xpath = "//div[@class='product-name']")
+    public WebElement productName;
+
 }
