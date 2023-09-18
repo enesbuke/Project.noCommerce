@@ -35,7 +35,10 @@ public class BaseDriverMethod {
         Func.Wait(5);
         driver.quit();
     }
+    //Rasgele bir sayi uretmek icin
+    public static int generalRandom(int min, int max) {
+        Random rnd = new Random();
+        return rnd.nextInt((max - min) + 1) + min;
 
-
-
+    }
 }

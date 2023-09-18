@@ -1,8 +1,15 @@
 package Elements;
 
+import Utility.BaseDriverMethod;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+
 import java.util.Random;
 
-public class Parents {
+public class Parents extends BaseDriverMethod {
+
+
     public void hoveraction(WebElement element) {
         Actions actions = new Actions(driver);
         Action action = actions.moveToElement(element).build();//elementin üstüne gel
@@ -19,17 +26,4 @@ public class Parents {
         return (int) (Math.random() * sinir);
     }
 
-    public void elementfindersText(WebElement element) {
-        hoveraction(element);
-        for (WebElement e : subtabs) {
-            System.out.println(e.getText());
-        }
     }
-
-    //Rasgele bir sayi uretmek icin
-    public static int generalRandom(int min, int max) {
-        Random rnd = new Random();
-        return rnd.nextInt((max - min) + 1) + min;
-
-    }
-}

@@ -1,5 +1,6 @@
 package RunOperators;
 
+import Elements.Parents;
 import Elements.PrElement;
 import Utility.BaseDriverClass;
 import Utility.BaseDriverMethod;
@@ -14,16 +15,15 @@ public class TestCase6 extends BaseDriverMethod {
     public void US_06_Order(){
 
         PrElement pr=new PrElement();
-        Func func=new Func();
 
-        func.hoverFunction(pr.computerS);
+        pr.hoveraction(pr.computerS);
         pr.desktopS.click();
         wait.until(ExpectedConditions.visibilityOf(pr.buildOwnComp));
         pr.buildOwnComp.click();
 
-        int chooseRandom=Func.createRandomNumb(pr.ramSelectContents.size());
+        int chooseRandom=Parents.randomGenerator(pr.ramSelectContents.size());
         pr.ramSelectContents.get(chooseRandom).click();
-        chooseRandom=Func.createRandomNumb(pr.hddButtonS.size());
+        chooseRandom=Parents.randomGenerator(pr.hddButtonS.size());
         pr.hddButtonS.get(chooseRandom).click();
 
         new Actions(driver).scrollToElement(pr.BYOC_addToCardButton);
