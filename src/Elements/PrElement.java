@@ -1,7 +1,6 @@
 package Elements;
 
 import Utility.BaseDriverMethod;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,7 +24,7 @@ public class PrElement extends Parents {
     @FindBy(css = "[id='Email']")//ENS login sayfası email label'ı
     public WebElement loginEmail;
 
-    @FindBy(css="[id='Password']")//ENS login sayfası password label'ı
+    @FindBy(css = "[id='Password']")//ENS login sayfası password label'ı
     public WebElement loginPassword;
 
     @FindBy(xpath = "//button[@class='button-1 login-button']")//ENS login sayfası login button'u
@@ -37,9 +36,9 @@ public class PrElement extends Parents {
     //Case4.1 - 4.2-
 
     @FindBy(xpath = "//div[@class='header-menu']")  // başlangıç menü
-    public  List<WebElement >listheader;
+    public List<WebElement> listheader;
     @FindBy(xpath = "//ul[@class='sublist first-level']") // alt menü
-    public List<WebElement>  subtabs;
+    public List<WebElement> subtabs;
     @FindBy(xpath = "//div[@class='header-menu']")
     public WebElement headerMenu;
     @FindBy(xpath = "//*[text()='Computers ']")     // Copmuter sekmesi
@@ -87,7 +86,7 @@ public class PrElement extends Parents {
     @FindBy(xpath = "//div[@class='details']")   // Ürün detayları
     public List<WebElement> details;            //
 
-    @FindBy(xpath ="//h2[@class='product-title']/a")      //Ürün ismileri
+    @FindBy(xpath = "//h2[@class='product-title']/a")      //Ürün ismileri
     public List<WebElement> productTitle;              //
 
     @FindBy(xpath = "//div[@class='product-name']")
@@ -192,6 +191,10 @@ public class PrElement extends Parents {
     @FindBy(xpath = "//a[text()='Adobe Photoshop CS4']")
     public WebElement product;
 
-
-
+    public void elementfindersText(WebElement element) {
+        hoveraction(element);
+        for (WebElement e : subtabs) {
+            System.out.println(e.getText());
+        }
+    }
 }
