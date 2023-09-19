@@ -196,5 +196,27 @@ public class PrElement extends Parents {
         for (WebElement e : subtabs) {
             System.out.println(e.getText());
         }
+
     }
+    @FindBy(linkText = "Register")
+    public WebElement  register ;
+    @FindBy(css = "input[id='gender-male']")
+    public WebElement cinsiyet;
+    @FindBy(css = "input[id='FirstName']")
+    public WebElement firstname;
+    @FindBy(css = "input[id='LastName']")
+    public WebElement  lastname;
+    @FindBy(css = "input[id='Email']")
+    public WebElement email  ;
+    @FindBy(css = "input[id='Company']")
+    public WebElement  company  ;
+    @FindBy(css = "input[id='Password']")
+    public WebElement password ;
+    @FindBy(css = "input[id='ConfirmPassword']")
+    public WebElement confirmPassword ;
+    @FindBy(css = "button[id='register-button']")
+    public WebElement Button ;
+    @FindBy(linkText = "Devam etmek")
+    public WebElement contine ;
+
 }
