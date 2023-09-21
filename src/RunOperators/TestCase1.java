@@ -1,5 +1,4 @@
 package RunOperators;
-
 import Elements.PrElement;
 import Utility.BaseDriverMethod;
 import Utility.Func;
@@ -8,9 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-
 public class TestCase1 extends BaseDriverMethod {
-
     @Test
     public void US_01_Reg(){
             PrElement pr=new PrElement();
@@ -47,9 +44,6 @@ public class TestCase1 extends BaseDriverMethod {
             pr.Button.click();
             Func.Wait(2);
             pr.contine.click();
-
-
-
         }
     }
 

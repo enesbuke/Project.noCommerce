@@ -216,7 +216,7 @@ public class PrElement extends Parents {
     public WebElement confirmPassword ;
     @FindBy(css = "button[id='register-button']")
     public WebElement Button ;
-    @FindBy(linkText = "Devam etmek")
+    @FindBy(css = "div[class='buttons'] [class='button-1 register-continue-button']")
     public WebElement contine ;
 
 }
