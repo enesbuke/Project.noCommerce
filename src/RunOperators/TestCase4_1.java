@@ -1,11 +1,11 @@
 package RunOperators;
 
 import Elements.PrElement;
-import Utility.BaseDriverMethod;
+import Utility.BaseDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCase4_1 extends BaseDriverMethod {
+public class TestCase4_1 extends BaseDriver {
     @Test
     public void US_04_TabMenu1(){
         PrElement pr=new PrElement();

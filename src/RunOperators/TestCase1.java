@@ -1,7 +1,7 @@
 package RunOperators;
 
 import Elements.PrElement;
-import Utility.BaseDriverMethod;
+import Utility.BaseDriver;
 import Utility.Func;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -9,12 +9,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class TestCase1 extends BaseDriverMethod {
+public class TestCase1 extends BaseDriver {
 
     @Test
     public void US_01_Reg(){
             PrElement pr=new PrElement();
-            driver.get("https://demo.nopcommerce.com/");
+
             pr.register.click();
             Func.Wait(2);
             pr.cinsiyet.click();
@@ -26,15 +26,15 @@ public class TestCase1 extends BaseDriverMethod {
             WebElement day = driver.findElement(By.cssSelector("select[name='DateOfBirthDay']"));
             WebElement month = driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']"));
             WebElement year = driver.findElement(By.cssSelector("select[name='DateOfBirthYear']"));
-            Select gün = new Select(day);
+            Select gun = new Select(day);
             Func.Wait(2);
             Select ay = new Select(month);
             Func.Wait(2);
-            Select yıl = new Select(year);
+            Select yil = new Select(year);
             Func.Wait(2);
-            gün.selectByValue("21");
+            gun.selectByValue("21");
             ay.selectByValue("4");
-            yıl.selectByValue("1997");
+            yil.selectByValue("1997");
             pr.email.sendKeys("Test.can@gmail.com");
             Func.Wait(2);
             pr.company.sendKeys("Techno study");

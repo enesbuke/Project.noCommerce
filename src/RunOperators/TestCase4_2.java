@@ -1,7 +1,7 @@
 package RunOperators;
 
 import Elements.PrElement;
-import Utility.BaseDriverMethod;
+import Utility.BaseDriver;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,11 +10,10 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestCase4_2 extends BaseDriverMethod {
+public class TestCase4_2 extends BaseDriver {
     @Test
     @Parameters("elements")
     public void US_04_TabMenu2(String elements){

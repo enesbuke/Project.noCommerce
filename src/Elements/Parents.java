@@ -1,13 +1,11 @@
 package Elements;
 
-import Utility.BaseDriverMethod;
+import Utility.BaseDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
-import java.util.Random;
-
-public class Parents extends BaseDriverMethod {
+public class Parents extends BaseDriver {
 
 
     public void hoveraction(WebElement element) {
