@@ -1,12 +1,12 @@
 package RunOperators;
 
 import Elements.PrElement;
-import Utility.BaseDriverMethod;
+import Utility.BaseDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class TestCase3 extends BaseDriverMethod {
+public class TestCase3 extends BaseDriver {
     @Test(dataProvider = "loginData")
     public void US_03_LoginNegative(String username,String password){
 
@@ -28,6 +28,7 @@ public class TestCase3 extends BaseDriverMethod {
                 {"fourthTry@tyr.com","fourthTry"},
                 {"fifthtry@email.com","fifthtry"},
                 {"sixthtry@xmail.com","sixthTry"},
+                {"Test.can@gmail.com","123456"}
         };
         return data;
     }

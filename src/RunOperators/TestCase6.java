@@ -2,14 +2,14 @@ package RunOperators;
 
 import Elements.Parents;
 import Elements.PrElement;
-import Utility.BaseDriverMethod;
+import Utility.BaseDriver;
 import Utility.Func;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCase6 extends BaseDriverMethod {
+public class TestCase6 extends BaseDriver {
     @Test
     public void US_06_Order(){
 
@@ -30,7 +30,6 @@ public class TestCase6 extends BaseDriverMethod {
         pr.BYOC_addToCardButton.click();
         wait.until(ExpectedConditions.visibilityOf(pr.chckShopCard));
         Assert.assertTrue(pr.chckShopCard.getText().toLowerCase().contains("the product has been added"));
-
 
 
 
