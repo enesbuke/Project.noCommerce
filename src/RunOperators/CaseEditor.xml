@@ -1,12 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="All Test Cases">
-
-        <test name="myTest">
-            <parameter name="elements" value="Notebook"> </parameter >
-            <parameter name="msg" value="Adobe Photoshop CS4">  </parameter>
-            <classes>
-                <class name="RunOperators.NopCmrAllCases"> </class>
-            </classes>
-        </test>
+    <test name="myTest">
+        <parameter name="elements" value="Notebook"> </parameter>
+        <parameter name="msg" value="Adobe Photoshop CS4"> </parameter>
+        <classes>
+            <class name="RunOperators.NopCmrAllCases"> </class>
+        </classes>
+    </test>
 </suite>
