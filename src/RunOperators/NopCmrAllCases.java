@@ -24,45 +24,46 @@ import java.util.Set;
 
 public class NopCmrAllCases extends BaseDriver {
 
-    @Test
+    @Test(priority = 1)
     public void US_01_Reg() {
         PrElement pr = new PrElement();
 
         pr.register.click();
-        Func.Wait(2);
+        Func.Wait(1);
         pr.cinsiyet.click();
-        Func.Wait(2);
+        Func.Wait(1);
         pr.firstname.sendKeys("can");
-        Func.Wait(2);
+        Func.Wait(1);
         pr.lastname.sendKeys("can");
-        Func.Wait(2);
+        Func.Wait(1);
         WebElement day = driver.findElement(By.cssSelector("select[name='DateOfBirthDay']"));
         WebElement month = driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']"));
         WebElement year = driver.findElement(By.cssSelector("select[name='DateOfBirthYear']"));
         Select gun = new Select(day);
-        Func.Wait(2);
+        Func.Wait(1);
         Select ay = new Select(month);
-        Func.Wait(2);
+        Func.Wait(1);
         Select yil = new Select(year);
-        Func.Wait(2);
+        Func.Wait(1);
         gun.selectByValue("21");
         ay.selectByValue("4");
         yil.selectByValue("1997");
         pr.email.sendKeys("Test.can@gmail.com");
-        Func.Wait(2);
+        Func.Wait(1);
         pr.company.sendKeys("Techno study");
-        Func.Wait(2);
+        Func.Wait(1);
         new Actions(driver).scrollByAmount(0, 1000).build().perform();
         pr.password.sendKeys("123456");
-        Func.Wait(2);
+        Func.Wait(1);
         pr.confirmPassword.sendKeys("123456");
-        Func.Wait(2);
+        Func.Wait(1);
         pr.Button.click();
-        Func.Wait(2);
+        Assert.assertTrue(pr.regMessage.getText().contains("registration completed"));
+        Func.Wait(1);
         pr.contine.click();
     }
 
-    @Test
+    @Test(priority = 2)
     public void US_02_Login() {
         PrElement pr=new PrElement();
 
@@ -77,7 +78,7 @@ public class NopCmrAllCases extends BaseDriver {
 
     }
 
-    @Test(dataProvider = "loginData")
+    @Test(priority = 3, dataProvider = "loginData")
     public void US_03_LoginNegative(String username, String password) {
         PrElement pr=new PrElement();
 
@@ -110,7 +111,7 @@ public class NopCmrAllCases extends BaseDriver {
         return data;
     }
 
-    @Test
+    @Test(priority = 4)
     public void US_04_TabMenu1() {
         PrElement pr = new PrElement();
         Assert.assertTrue(pr.headerMenu.isEnabled()); // menü etkinmi ?
@@ -170,7 +171,7 @@ public class NopCmrAllCases extends BaseDriver {
         }
     }
 
-    @Test
+    @Test(priority = 5)
     @Parameters("elements")
     public void US_04_TabMenu2(String elements) {
         PrElement pr = new PrElement();
@@ -207,7 +208,7 @@ public class NopCmrAllCases extends BaseDriver {
             "Keyifli alışverişler!",
             "Sevdiklerinizle beraber kullanın!"};
 
-    @Test(priority = 1)
+    @Test(priority = 7)
     public void US_05_GiftOrder() throws AWTException {
         pr = PageFactory.initElements(driver, PrElement.class);
 
@@ -276,7 +277,7 @@ public class NopCmrAllCases extends BaseDriver {
         Assert.assertEquals(actualMessage, expectedMessage, "Ürün sepete eklenemedi.");
     }
 
-    @Test(dataProvider = "inputData", priority = 2)
+    @Test(priority = 8, dataProvider = "inputData")
     public void TestCase5NegativeMessage(String recipientName, String yourName, String message) {
 
         pr = PageFactory.initElements(driver, PrElement.class);
@@ -301,7 +302,7 @@ public class NopCmrAllCases extends BaseDriver {
     }
 
 
-    @Test
+    @Test(priority = 9)
     public void US_06_Order() {
 
         PrElement pr = new PrElement();
@@ -324,7 +325,7 @@ public class NopCmrAllCases extends BaseDriver {
     }
 
 
-    @Test
+    @Test(priority = 6)
     @Parameters("msg")
     public void US_07_Search(String text){
 
