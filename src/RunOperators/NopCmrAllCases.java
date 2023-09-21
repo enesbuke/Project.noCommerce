@@ -1,3 +1,5 @@
+package RunOperators;
+
 import Elements.Parents;
 import Elements.PrElement;
 import Utility.BaseDriver;
@@ -20,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class nopCases extends BaseDriver {
+public class NopCmrAllCases extends BaseDriver {
 
     @Test
     public void US_01_Reg() {
@@ -62,22 +64,36 @@ public class nopCases extends BaseDriver {
 
     @Test
     public void US_02_Login() {
+        PrElement pr=new PrElement();
 
+        pr.loginButton.click();
+        pr.loginEmail.sendKeys("Test.can@gmail.com");
+        pr.loginPassword.sendKeys("123456");
+        pr.log_inButton.click();
+        wait.until(ExpectedConditions.visibilityOf(pr.myAccButton));
+        pr.hoveraction(pr.myAccButton);
 
-
+        Assert.assertTrue(pr.myAccButton.isEnabled());
 
     }
 
     @Test(dataProvider = "loginData")
     public void US_03_LoginNegative(String username, String password) {
-
-        PrElement pr = new PrElement();
+        PrElement pr=new PrElement();
 
         pr.loginButton.click();
         pr.loginEmail.sendKeys(username);
         pr.loginPassword.sendKeys(password);
         pr.log_inButton.click();
-        Assert.assertTrue(pr.loginErrorMsg.getText().toLowerCase().contains("login was unsuccessful"));
+
+        if (username.contains("can")){
+            wait.until(ExpectedConditions.visibilityOf(pr.myAccButton));
+            pr.hoveraction(pr.myAccButton);
+            Assert.assertTrue(pr.myAccButton.isEnabled());
+        }
+        else {
+            Assert.assertTrue(pr.loginErrorMsg.getText().toLowerCase().contains("login was unsuccessful"));
+        }
     }
 
     @DataProvider

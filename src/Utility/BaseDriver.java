@@ -1,5 +1,6 @@
 package Utility;
 
+import Elements.PrElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,12 +29,20 @@ public class BaseDriver {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         driver.get("https://demo.nopcommerce.com");
 
+        //loginFunction();
     }
-
     @AfterMethod
     public void finishAnnotation() {
         Func.Wait(3);
         driver.quit();
+    }
+    public void loginMethod(){
+        PrElement pr=new PrElement();
+
+        pr.loginButton.click();
+        pr.loginEmail.sendKeys("Test.can@gmail.com");
+        pr.loginPassword.sendKeys("123456");
+        pr.log_inButton.click();
     }
     //Rasgele bir sayi uretmek icin
     public static int generalRandom(int min, int max) {

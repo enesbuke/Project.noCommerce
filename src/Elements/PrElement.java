@@ -26,6 +26,8 @@ public class PrElement extends Parents {
     public WebElement log_inButton;
     @FindBy(xpath = "//div[@class='message-error validation-summary-errors']") //login sayfası hatalı giriş mesajı
     public WebElement loginErrorMsg;
+    @FindBy(xpath = "//a[@class='ico-account']")
+    public WebElement myAccButton;
     //Case3-*
 
     //Case4.1 - 4.2-
