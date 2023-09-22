@@ -54,8 +54,8 @@ Domain -> https://demo.nopcommerce.com
 
 # Used Repositories
 
-| Package   |  Description # |
-|:-------:| -----:|
+| Package   |  Description  |
+|:-------:|:------:|
 | TestNG | Next Generation Testing Tool. |
 | Selenium | Browser Automation Framework. |
 | commons.io | The Apache Commons IO library |
