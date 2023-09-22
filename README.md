@@ -12,8 +12,10 @@ Domain -> https://demo.nopcommerce.com
  * Murat ENGİNEL -- Tester
  * Fatih GÜVENÇ -- Tester
 
-> File Project From Version Control 
-> Copy to URL 
+> File Project From Version Control
+
+> Copy to URL
+
 git@github.com:enesbuke/Project.noCommerce.git
 
 > open project at Intellij 
@@ -42,11 +44,12 @@ XML > BaseTest.xml
 
 
 ## Used Repositories
-|Package |Description | 
-| Selenium | org.seleniumhq.selenium:selenium-java:4.11.0 | 
-| Sljf | org.slf4j:slf4j-nop:1.7.30 | 
-| | commons-io:commons-io:2.11.0
- org.testng:testng:6.14.3
+
+| Fiyat   | Adet  |
+|:-------:| -----:|
+| 1000TL  | 1     |
+| 100TL   | 10    |
+| 1TL     | 1000  |
 
 
 
