@@ -12,6 +12,11 @@ Domain -> https://demo.nopcommerce.com
  * Murat ENGİNEL -- Tester
  * Fatih GÜVENÇ -- Tester
 
+
+
+
+   
+
 > File Project From Version Control
 > Copy to URL
    
