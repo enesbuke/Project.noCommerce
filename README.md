@@ -6,18 +6,14 @@ Domain -> https://demo.nopcommerce.com
 
 
 ## Collaborators
- *  **Enes BÜKE** -- Team Lead 
- * Alperen ŞANLI -- Tester
- * Sinem YURDUSEVER -- Tester
- * Murat ENGİNEL -- Tester
- * Fatih GÜVENÇ -- Tester
+ * _Enes BÜKE_ -- **Team Lead** 
+ * _Alperen ŞANLI_ -- **Tester**
+ * _Sinem YURDUSEVER_ -- **Tester**
+ * _Murat ENGİNEL_ -- **Tester**
+ * _Fatih GÜVENÇ_ -- **Tester**
 #
 #
 #
-
-
-
-   
 
 > File Project From Version Control  
 > Copy to URL  
