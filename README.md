@@ -14,36 +14,36 @@ Domain -> https://demo.nopcommerce.com
 
 > File Project From Version Control  
 > Copy to URL  
-git@github.com:enesbuke/Project.noCommerce.git
+git@github.com:enesbuke/Project.noCommerce.git  
 
 > open project at Intellij  
 > select project JDK  
-jdk1.8
+**jdk1.8**  
 
 < Open Module Settings at Intellij  
 < install selenium from maven   
-org.seleniumhq.selenium:selenium-java:4.11.0  
+**org.seleniumhq.selenium:selenium-java:4.11.0**  
 
-<!-- # install testng from maven -->
-org.testng:testng:6.14.3
+> # install testng from maven  
+**org.testng:testng:6.14.3**  
 
-<!-- # install slf4j from maven -->
-org.slf4j:slf4j-nop:1.7.30
+> # install slf4j from maven  
+**org.slf4j:slf4j-nop:1.7.30**  
 
-<!-- # install commons.io from maven -->
-commons-io:commons-io:2.11.0
+< # install commons.io from maven  
+**commons-io:commons-io:2.11.0**  
 
-<!-- # Right click to Main.java -->
-Run 'Main'
+> # Right click to Main.java  
+**Run 'NopCmrAllCases'**  
 
-<!-- # or Run XML configurations -->
-XML > BaseTest.xml 
+> # or Run XML configurations  
+**XML > CaseEditor.xml**  
 
 
 
-## Used Repositories
+# Used Repositories
 
-| Fiyat   | Adet  |
+| Package   | Adet  |
 |:-------:| -----:|
 | 1000TL  | 1     |
 | 100TL   | 10    |
