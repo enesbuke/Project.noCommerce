@@ -12,11 +12,41 @@ Domain -> https://demo.nopcommerce.com
  * Murat ENGİNEL -- Tester
  * Fatih GÜVENÇ -- Tester
 
+   # File > New > Project From Version Control 
+# Copy to URL
+git@github.com:emrtnm/TechnoStudyTr.git
+
+# open project at Intellij
+# select project JDK
+jdk1.8
+
+# Open Module Settings at Intellij
+# install selenium from maven
+org.seleniumhq.selenium:selenium-java:4.11.0
+
+# install testng from maven
+org.testng:testng:6.14.3
+
+# install slf4j from maven
+org.slf4j:slf4j-nop:1.7.30
+
+# install commons.io from maven
+commons-io:commons-io:2.11.0
+
+# Right click to Main.java
+Run 'Main'
+
+# or Run XML configurations
+XML > BaseTest.xml 
+
+
 
 ## Used Repositories
+|Package |Description | 
+| | org.seleniumhq.selenium:selenium-java:4.11.0 | 
+ org.slf4j:slf4j-nop:1.7.30
+ commons-io:commons-io:2.11.0
+ org.testng:testng:6.14.3
 
-* org.seleniumhq.selenium:selenium-java:4.11.0
-* org.slf4j:slf4j-nop:1.7.30
-* commons-io:commons-io:2.11.0
-* org.testng:testng:6.14.3
+
 
