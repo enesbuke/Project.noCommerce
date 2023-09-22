@@ -61,7 +61,7 @@ Domain -> https://demo.nopcommerce.com
 | commons.io | The Apache Commons IO library |
 
 
-# **LİSENCE**  
+## **Lisence**  
 
 This project is open-sourced software licensed under the MIT license.
 
