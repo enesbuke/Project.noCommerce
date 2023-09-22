@@ -12,16 +12,16 @@ Domain -> https://demo.nopcommerce.com
  * Murat ENGİNEL -- Tester
  * Fatih GÜVENÇ -- Tester
 
-  > File > New > Project From Version Control -->
-<!-- Copy to URL -->
+> File Project From Version Control 
+> Copy to URL 
 git@github.com:enesbuke/Project.noCommerce.git
 
-<!-- open project at Intellij -->
-<!-- select project JDK -->
+> open project at Intellij 
+> select project JDK 
 jdk1.8
 
-<!-- # Open Module Settings at Intellij -->
-<!-- # install selenium from maven -->
+< Open Module Settings at Intellij 
+< install selenium from maven 
 org.seleniumhq.selenium:selenium-java:4.11.0
 
 <!-- # install testng from maven -->
