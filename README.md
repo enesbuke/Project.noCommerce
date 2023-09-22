@@ -19,8 +19,8 @@ Domain -> https://demo.nopcommerce.com
 
    
 
-> File Project From Version Control
-> Copy to URL
+> File Project From Version Control  
+> Copy to URL  
    
 git@github.com:enesbuke/Project.noCommerce.git  
 
