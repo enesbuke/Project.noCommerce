@@ -42,11 +42,11 @@ Domain -> https://demo.nopcommerce.com
 
 **_commons-io:commons-io:2.11.0_**  
 #
-> Right click to Main.java
+> Right click to NopCmrAllCases.java
 
 **_Run 'NopCmrAllCases'_**  
 #
->  or Run XML configurations
+>  or Run XML configuration
 
 **_XML -> CaseEditor.xml_**  
 #
