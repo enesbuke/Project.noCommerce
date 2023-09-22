@@ -54,11 +54,11 @@ Domain -> https://demo.nopcommerce.com
 
 # Used Repositories
 
-| Package   | Adet  |
+| Package   | Description  |
 |:-------:| -----:|
-| 1000TL  | 1     |
-| 100TL   | 10    |
-| 1TL     | 1000  |
+| TestNG | Next Generation Testing Tool. |
+| Selenium | Browser Automation Framework. |
+| commons.io | The Apache Commons IO library |
 
 
 
