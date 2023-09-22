@@ -63,6 +63,6 @@ Domain -> https://demo.nopcommerce.com
 
 ## **Lisence**  
 
-This project is open-sourced software licensed under the [MIT license.](Lisence.md)
+_This project is open-sourced software licensed under the_ [MIT license.](Lisence.md)
 
 
